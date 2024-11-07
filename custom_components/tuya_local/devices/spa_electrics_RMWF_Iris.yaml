@@ -1,0 +1,212 @@
+name: Spa Electrics RM-WF Iris Wifi Pool Light Controller
+products:
+  - id: nzmllynz7tligqp0
+    name: Spa Electrics RM-WF Iris Wifi Pool Light Controller
+
+primary_entity:
+  entity: light
+  dps:
+    - id: 108
+      type: boolean
+      name: Zone 1 Switch
+
+secondary_entities:
+  - entity: select
+    name: Colour
+    icon: "mdi:palette"
+    category: config
+    dps:
+     - id: 110
+       name: Colour
+       type: string
+       mapping:
+        - dps_val: WHITE
+          value: White
+        - dps_val: AQUA
+          value: Aqua
+        - dps_val: BLUE
+          value: Blue
+        - dps_val: MAGENTA
+          value: Magenta
+        - dps_val: RED
+          value: Red
+        - dps_val: LIME
+          value: Lime
+        - dps_val: GREEN
+          value: green
+        - dps_val: OCEANIC
+          value: Oceanic
+        - dps_val: TRANSCENDENCE
+          value: Transcendence
+        - dps_val: OUTBACK
+          value: Outback
+        - dps_val: SPRING
+          value: Spring
+
+     - id: 112
+       name: Zone 1 Brightness
+       type: integer
+       range:
+        min: 1
+        max: 3
+
+     - id: 114
+       name: Zone 1 Speed 
+       type: integer
+       range:
+        min: 1
+        max: 3
+
+     - id: 106
+       type: boolean
+       name: Zone 1 is GPO
+
+     - id: 116
+       type: boolean
+       name: Zone 1 and 2 are linked
+
+     - id: 120
+       type: boolean
+       name: Zone 2 Switch
+
+     - id: 117
+       type: boolean
+       name: zn_link_ctrl_on_main_pnl
+
+     - id: 118
+       type: boolean
+       name: zn2_is_gpo
+
+     - id: 122
+       type: string
+       name: zn2_clr_shw
+
+     - id: 124
+       name: Zone 2 Brightness
+       type: integer
+       range:
+         min: 1
+         max: 3
+
+     - id: 126
+       name: Zone 2 Speed
+       type: integer
+       range:
+        min: 1
+        max: 3
+
+     - id: 130
+       type: boolean
+       name: Schedules Enabled
+
+     - id: 132
+       type: integer
+       name: Zone 1 Scheduled Hours
+
+     - id: 134
+       type: integer
+       name: Zone 1 Scheduled Minutes
+
+     - id: 136 
+       type: string
+       name: Zone 1 Scheduled Colour
+
+     - id: 137
+       type: integer
+       name: Zone 1 Scheduled Brightness
+
+     - id: 138
+       type: integer
+       name: Zone 1 Scheduled Speed
+
+     - id: 140
+       type: integer
+       name: Zone 2 Scheduled Hours
+
+     - id: 142
+       type: integer
+       name: Zone 2 Scheduled Minutes
+
+     - id: 144
+       type: string
+       name: Zone 2 Scheduled Colour
+
+     - id: 146
+       type: integer
+       name: Zone 2 Scheduled Brightness
+
+     - id: 148
+       type: integer
+       name: Zone 2 Scheduled Speed
+
+     - id: 150
+       type: boolean
+       name: Zone 1 Schedule Active
+
+     - id: 152
+       type: boolean
+       name: Zone 2 Schedule Active
+
+     - id: 154
+       type: integer
+       name: Zone 1 Scheduled Hours (GPO)
+
+     - id: 155
+       type: integer
+       name: Zone 1 Scheduled Mins (GPO)
+
+     - id: 157
+       type: integer
+       name: Zone 2 Scheduled Hours (GPO)
+
+     - id: 158
+       type: integer
+       name: Zone 2 Scheduled Mins (GPO)
+
+     - id: 160
+       type: boolean
+       name: Sync Now
+
+     - id: 162
+       type: boolean
+       name: Light Clear All Default
+
+     - id: 164
+       type: boolean
+       name: Light Set Mode
+
+     - id: 166
+       type: boolean
+       name: Reset Occurred
+
+     - id: 168
+       type: string
+       name: Firmware Version
+
+     - id: 170
+       type: string
+       name: Startup Status
+
+     - id: 174
+       type: boolean
+       name: Temp Zone 1 is GPO
+
+     - id: 175
+       type: boolean
+       name: Temp Zone 2 is GPO
+
+     - id: 176
+       type: boolean
+       name: Temp Zone 1 linked to Zone 2
+
+     - id: 177
+       type: boolean
+       name: Temp Schedule Enabled
+
+     - id: 179
+       type: boolean
+       name: Clear App Settings
+
+     - id: 180
+       type: string
+       name: Service Mode Status
